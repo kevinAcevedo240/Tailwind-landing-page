@@ -1,0 +1,7 @@
+.Card{
+  @apply w-48 h-64 shadow-lg rounded-xl flex-none;
+}
+
+.img-card{
+  @apply w-full h-3/5 rounded-t-lg bg-cover;
+}

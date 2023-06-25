@@ -1,1 +1,13 @@
-<div id="recommendations"></div>
+<div class="p-6" id="recommendations">
+  <p class="text-3xl font-semibold text-primary">Recommended</p>
+  <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6">
+
+    <div *ngFor="let item of places" class="Card">
+      <img class="img-card" [src]="item.Image" alt="place">
+      <div class="w-full h-2/5  rounded-b-lg px-4 " [class]="'text-' + item.TextColor + ' bg-' + item.Background">
+        <p class="text-bold text-xl py-2">{{item.Name}}</p>
+        <p class="text-md">{{item.Description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
