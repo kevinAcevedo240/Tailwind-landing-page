@@ -1,0 +1,7 @@
+.tab-phone{
+  @apply w-full h-16 bg-gray-100 fixed left-0  bottom-0 shadow-md rounded-t-xl flex space-x-9 items-center justify-center;
+}
+
+.tab-responsive{
+  @apply lg:hidden;
+}

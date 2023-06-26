@@ -1,5 +1,5 @@
 .Card{
-  @apply w-48 h-64 shadow-lg rounded-xl flex-none;
+  @apply w-48 h-64 shadow-lg rounded-xl flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl;
 }
 
 .img-card{

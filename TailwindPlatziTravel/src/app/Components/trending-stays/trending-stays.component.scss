@@ -1,0 +1,20 @@
+.tittle-card{
+  @apply text-3xl px-8 pt-8 pb-2 font-semibold ;
+}
+
+.description{
+  @apply text-sm pl-8  mr-8 text-white;
+}
+
+.gradient{
+  @apply bg-gradient-to-b from-slate-400;
+}
+
+
+.tittle-responsive{
+  @apply lg:text-4xl ;
+}
+
+.description-responsive{
+  @apply lg:text-lg;
+}

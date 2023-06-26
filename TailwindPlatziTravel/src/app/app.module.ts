@@ -8,6 +8,8 @@ import { OurRecomendationComponent } from './Components/our-recomendation/our-re
 import { TrendingStaysComponent } from './Components/trending-stays/trending-stays.component';
 import { FAQComponent } from './Components/faq/faq.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TabBarComponent } from './Components/tab-bar/tab-bar.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,12 @@ import { FooterComponent } from './Components/footer/footer.component';
     OurRecomendationComponent,
     TrendingStaysComponent,
     FAQComponent,
-    FooterComponent
+    FooterComponent,
+    TabBarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

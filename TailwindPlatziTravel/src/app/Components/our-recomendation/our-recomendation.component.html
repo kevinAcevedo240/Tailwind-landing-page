@@ -1,6 +1,6 @@
 <div class="p-6" id="recommendations">
-  <p class="text-3xl font-semibold text-primary">Recommended</p>
-  <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6">
+  <p class="tittle-section">Recommended</p>
+  <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
 
     <div *ngFor="let item of places" class="Card">
       <img class="img-card" [src]="item.Image" alt="place">

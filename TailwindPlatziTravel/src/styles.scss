@@ -6,3 +6,40 @@
 // .Card{
 //   @apply w-48 h-64 shadow-lg rounded-xl
 // }
+
+$primary: #CC2D4A;
+$secondary: #8FA206;
+$terciary: #61AEC9;
+$white: #ffff;
+
+.tittle-section{
+  @apply text-3xl text-primary font-semibold;
+}
+
+.text-primary{
+  color: $primary;
+}
+
+.bg-primary{
+  background: $primary ;
+}
+
+.text-secondary{
+  color: $secondary;
+}
+
+.bg-secondary{
+  background: $secondary ;
+}
+
+.text-terciary{
+  color: $terciary;
+}
+
+.bg-terciary{
+  background: $terciary ;
+}
+
+.text-white{
+  color: $white;
+}

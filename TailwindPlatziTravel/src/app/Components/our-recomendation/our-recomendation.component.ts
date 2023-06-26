@@ -18,7 +18,7 @@ export class OurRecomendationComponent {
     },
     {
       Image: '../../assets/img/new_york.jpg',
-      Background: 'primary',
+      Background: 'white',
       TextColor: 'terciary',
       Name: 'New York',
       Description: 'Concrete Jungle'
@@ -32,7 +32,7 @@ export class OurRecomendationComponent {
     },
     {
       Image: '../../assets/img/seattle.jpg',
-      Background: 'primary',
+      Background: 'white',
       TextColor: 'terciary',
       Name: 'Seattle',
       Description: 'A city to enjoy to the fullest'
@@ -46,7 +46,7 @@ export class OurRecomendationComponent {
     },
     {
       Image: '../../assets/img/sydney.jpg',
-      Background: 'primary',
+      Background: 'white',
       TextColor: 'terciary',
       Name: 'Sydney',
       Description: 'Get to know the famous Opera'
@@ -60,7 +60,7 @@ export class OurRecomendationComponent {
     },
     {
       Image: '../../assets/img/iceland.jpg',
-      Background: 'primary',
+      Background: 'white',
       TextColor: 'terciary',
       Name: 'iceland',
       Description: 'For landscape lovers'

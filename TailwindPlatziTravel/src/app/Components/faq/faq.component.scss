@@ -1,0 +1,15 @@
+.tittle-faq{
+  @apply text-xl font-medium text-primary;
+}
+
+.description-faq{
+  @apply text-sm pt-2;
+}
+
+.tittle-responsive{
+  @apply lg:text-2xl;
+}
+
+.description-responsive{
+  @apply lg:text-lg;
+}
