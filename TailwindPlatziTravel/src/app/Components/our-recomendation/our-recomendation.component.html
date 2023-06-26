@@ -1,12 +1,13 @@
 <div class="p-6" id="recommendations">
-  <p class="tittle-section">Recommended</p>
+  <p class="tittle-section" [class.darkColor]="isDarkMode">Recommended</p>
   <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
 
     <div *ngFor="let item of places" class="Card">
       <img class="img-card" [src]="item.Image" alt="place">
-      <div class="w-full h-2/5  rounded-b-lg px-4 " [class]="'text-' + item.TextColor + ' bg-' + item.Background">
-        <p class="text-bold text-xl py-2">{{item.Name}}</p>
-        <p class="text-md">{{item.Description}}</p>
+      <div class="w-full h-2/5  rounded-b-lg px-4 "
+      [class]="'text-' + item.TextColor + ' bg-' + item.Background + (isDarkMode ? ' ' + item.DarkBackground : '')">
+        <p class="text-bold text-xl py-2" [class.darkColor]="isDarkMode">{{item.Name}}</p>
+        <p class="text-md" [class.darkColor]="isDarkMode">{{item.Description}}</p>
       </div>
     </div>
   </div>

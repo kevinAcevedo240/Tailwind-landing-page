@@ -1,2 +1,20 @@
-<nav></nav>
-<div id="tabBar"></div>
+<nav class="w-full h-14 hidden bg-white p-4 justify-between fixed z-10 lg:flex "[class.darkbackground]="isDarkMode">
+  <div class="h-auto w-auto">
+    <p class="text-2xl text-primary font-black" [class.darkColor]="isDarkMode">Platzi Travel</p>
+  </div>
+  <div class="flex space-x-8 ">
+    <a class="option" [class.darkColor]="isDarkMode" href="#home">Home</a>
+    <a class="option" [class.darkColor]="isDarkMode" href="#recommendations">Recommended</a>
+    <a class="option" [class.darkColor]="isDarkMode" href="#trending_stays">Trending Stays</a>
+    <a class="option" [class.darkColor]="isDarkMode" href="#Faqs">FAQS</a>
+    <a class="option" [class.darkColor]="isDarkMode" href="#OwnerInformation">About me</a>
+  </div>
+  <div class="flex space-x-6">
+    <fa-icon class="fa-xl text-gray-400" [class.darkColor]="isDarkMode" [icon]="faMagnifyingGlass"></fa-icon>
+    <fa-icon class="fa-xl text-primary" [icon]="isDarkMode ? faSun : faMoon" (click)="toggleDarkMode()"></fa-icon>
+    <fa-icon class="fa-xl text-gray-400" [class.darkColor]="isDarkMode" [icon]="faUser"></fa-icon>
+  </div>
+</nav>
+
+
+

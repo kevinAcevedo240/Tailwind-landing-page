@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { faq } from 'src/app/Models/faq/faq.module';
+import { DarkModeService } from 'src/app/Services/dark-mode.service';
 
 @Component({
   selector: 'app-faq',
   templateUrl: './faq.component.html',
   styleUrls: ['./faq.component.scss']
 })
-export class FAQComponent {
+export class FAQComponent implements OnInit {
   faqs: faq[] = [
     {
       Tittle: 'Cancellation Policy',
@@ -30,4 +31,17 @@ export class FAQComponent {
     },
 
   ];
+
+  isDarkMode = false;
+
+  constructor(
+    private _darkModeService: DarkModeService
+  ){}
+
+  ngOnInit(): void {
+    this._darkModeService.isDarkMode$.subscribe(darkMode =>{
+      this.isDarkMode = darkMode;
+
+    })
+  }
 }

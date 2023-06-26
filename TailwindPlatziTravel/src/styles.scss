@@ -16,6 +16,10 @@ $white: #ffff;
   @apply text-3xl text-primary font-semibold;
 }
 
+.darkColor{
+  @apply text-white;
+}
+
 .text-primary{
   color: $primary;
 }

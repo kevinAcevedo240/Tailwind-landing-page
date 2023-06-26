@@ -4,4 +4,5 @@ export interface Place{
   TextColor: string;
   Name: string;
   Description: string;
+  DarkBackground: string;
 }

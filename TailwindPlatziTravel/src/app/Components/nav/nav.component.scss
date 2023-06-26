@@ -1,0 +1,13 @@
+.option{
+  @apply font-bold text-primary text-lg;
+}
+
+
+.darkColor{
+  @apply text-white;
+}
+
+
+.darkbackground{
+  @apply dark:bg-gray-800;
+}

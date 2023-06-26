@@ -5,3 +5,15 @@
 .img-card{
   @apply w-full h-3/5 rounded-t-lg bg-cover;
 }
+
+.darkColor{
+  @apply text-white;
+}
+
+.darkPrimary{
+  @apply dark:bg-gray-700;
+}
+
+.darkSecondary{
+  @apply dark:bg-gray-800;
+}

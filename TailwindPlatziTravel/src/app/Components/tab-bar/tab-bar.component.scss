@@ -5,3 +5,16 @@
 .tab-responsive{
   @apply lg:hidden;
 }
+
+
+.darkColor{
+  @apply text-white;
+}
+
+.darkPrimary{
+  @apply dark:bg-gray-700;
+}
+
+.darkSecondary{
+  @apply dark:bg-gray-800;
+}

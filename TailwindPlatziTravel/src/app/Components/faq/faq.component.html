@@ -1,9 +1,9 @@
 <div class="p-4 w-full mb-4" id="Faqs">
   <div class="w-full h-full px-4 flex flex-col space-y-4">
-    <p class="tittle-section pb-6 mt-4">FAQs</p>
+    <p class="tittle-section pb-6 mt-4" [class.darkColor]="isDarkMode">FAQs</p>
     <div *ngFor="let item of faqs">
-      <p class="tittle-faq tittle-responsive">{{item.Tittle}}</p>
-      <p class="description-faq description-responsive">{{item.Description}}</p>
+      <p class="tittle-faq tittle-responsive" [class.darkColor]="isDarkMode">{{item.Tittle}}</p>
+      <p class="description-faq description-responsive" [class.darkColor]="isDarkMode">{{item.Description}}</p>
     </div>
 
   </div>

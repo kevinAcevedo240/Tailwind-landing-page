@@ -1,0 +1,8 @@
+
+.darkMode{
+  @apply dark:bg-gray-900;
+}
+
+.body-style{
+  @apply font-Montserrat flex flex-col min-h-screen scroll-smooth;
+}
