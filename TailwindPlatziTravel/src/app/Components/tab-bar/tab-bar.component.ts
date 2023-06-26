@@ -29,4 +29,10 @@ export class TabBarComponent {
     this._darkModeService.changeDarkMode(this.isDarkMode);
     // this.darkModeToggled.emit(this.isDarkMode);
   }
+
+  ngOnInit(): void {
+    this._darkModeService.isDarkMode$.subscribe(darkMode =>{
+      this.isDarkMode = darkMode;
+    })
+  }
 }
