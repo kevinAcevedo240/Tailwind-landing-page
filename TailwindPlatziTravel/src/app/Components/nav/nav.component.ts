@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { faMagnifyingGlass, faMoon, faSun, faUser } from '@fortawesome/free-solid-svg-icons';
 import { DarkModeService } from 'src/app/Services/dark-mode.service';
 
@@ -7,7 +7,7 @@ import { DarkModeService } from 'src/app/Services/dark-mode.service';
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss']
 })
-export class NavComponent {
+export class NavComponent implements OnInit {
   faMagnifyingGlass = faMagnifyingGlass;
   faMoon = faMoon;
   faSun = faSun;
@@ -18,12 +18,10 @@ export class NavComponent {
     private _darkModeService: DarkModeService
   ){}
 
-  // @Output() darkModeToggled = new EventEmitter<boolean>();
 
   toggleDarkMode() {
     this.isDarkMode = !this.isDarkMode;
     this._darkModeService.changeDarkMode(this.isDarkMode);
-    // this.darkModeToggled.emit(this.isDarkMode);
   }
 
 
